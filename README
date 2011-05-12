@@ -1,0 +1,28 @@
+Project Description
+====================================
+
+table2class is a lightweight PHP script that creates class definitions from MySQL tables automatically. It is released under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License and the source code is available on GitHub. More information about this script can be found at the project homepage located at:
+
+http://www.stevenflesch.com/projects/table2class/
+
+Contributions
+====================================
+
+Code formatting functions use a class provided under a Creative Commons Attribution 3.0 United States License from Daniel Lubarov at indented.net. The database class and project idea is based loosely on an idea from Marco Voegeli at www.voegeli.li.
+
+Usage
+====================================
+*Please note: Your MySQL user must have LIST DATABASES permissions.*
+You must have write permissions on the /output/ directory.
+To use:
+* Place table2class directory somewhere on your web server.
+* Ensure you have a MySQL user with LIST DATABASES permissions.
+* Enter server credentials.  Press Connect button.
+* Select database, table, and primary key field.
+* Enter the name of the class and click Generate button.
+* Your class file will be generated in the output/ folder.
+* When using your class, remember that the file: *output/class.database.php is REQUIRED*.
+
+License
+=====================================
+table2class by Steven Flesch is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
