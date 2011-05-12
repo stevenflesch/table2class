@@ -1,0 +1,91 @@
+body {
+	font-family: Tahoma;
+	font-size: .9em;	
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+.center {
+	text-align: center;
+}
+
+.clear {
+	float: left;
+	width: 100%;
+	clear: both;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.primarykey {
+    color: #FF0000;
+    font-weight: bold;
+    background-color: #FFCCFF;
+}
+
+div#wrapper {
+
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	margin: 0 auto;
+}
+
+div#column-outer {
+	clear: left;
+	float: left;
+	width: auto;
+	overflow: hidden;
+    background-color: #EEEEEE;
+}
+
+div#column-inner {
+	float: left;
+	width: auto;
+	position: relative;
+}
+
+div#header {
+	font-size: 2em;
+	text-shadow: 0px 1px 1px #333;
+	color: #666;
+	padding: 10px 0 10px 0;
+	background-color: #999;
+	border: 1px solid #333;
+	border-right-width: 0;
+	border-left-width: 0;
+}
+
+div#content-left {
+	width: 288px;
+	float: left;
+	left: 0;
+	background-color: #CCC;
+	padding: 6px 6px 10px 6px;
+}
+
+div#content-right {
+	font-family: monospace;
+	text-align: left;
+	padding: 0 10px 0 10px;
+	width: 480px;
+	float: left;
+	left: 300px;
+}
+
+div#footer {
+	font-size: .6em;
+	font-style: italic;
+	padding: 10px 0 10px 0;
+	background-color: #999;
+	border: 1px solid #333;
+	border-right-width: 0;
+	border-left-width: 0;
+}
