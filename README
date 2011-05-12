@@ -14,7 +14,7 @@ Usage
 ====================================
 Please note: Your MySQL user must have LIST DATABASES permissions.
 You must have write permissions on the /output/ directory.
-```chmod 0777 output/```
+	chmod 0777 output/
 
 License
 =====================================
