@@ -216,8 +216,8 @@
 
 	
 	    <div id="footer" class="center clear">
-	        Source: http://github.com/projects/table2class/ &nbsp;&bull;&nbsp; Homepage: http://www.stevenflesch.com/projects/table2class/<br />
-			Licensed under the GPLv3 License.
+	        Source: <a href="http://github.com/stevenflesch/table2class/" target="_blank">http://github.com/stevenflesch/table2class/</a> &nbsp;&bull;&nbsp; Homepage: <a href="http://www.stevenflesch.com/projects/table2class/" target="_blank">http://www.stevenflesch.com/projects/table2class/</a><br />
+			<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">table2class</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.stevenflesch.com/projects/table2class/" property="cc:attributionName" rel="cc:attributionURL">Steven Flesch</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
 	    </div>
 	</div>
 
