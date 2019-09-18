@@ -174,7 +174,7 @@ class tableClass {
     public function getSelect() {
         $sRet  = "public function select(\$mID) { // SELECT Function\n// Execute SQL Query to get record.\n";
         $sRet .= "\$sSQL =  \"SELECT * FROM $this->tablename WHERE $this->primarykey = \$mID;\";\n";
-        $sRet .= "\$oResult =  \$this->database->query(\$sSQL);\n\$oResult = \$this->database->result;\n\$oRow = mysql_fetch_object(\$oResult);\n\n";
+        $sRet .= "\$oResult =  \$this->database->query(\$sSQL);\n\$oResult = \$this->database->result;\n\$oRow = mysqli_fetch_object(\$oResult);\n\n";
         $sRet .= "// Assign results to class.\n";
         $sRet .= "\$this->$this->primarykey = \$oRow->$this->primarykey; // Primary Key\n";
         // Loop through variables.
@@ -213,7 +213,7 @@ class tableClass {
         $sRet .= "\$sSQL = \"UPDATE $this->tablename SET ($this->primarykey = '\$this->$this->primarykey'";
         // Loop through variables.
         foreach($this->variables as $variable) {
-            //$sRet .= ", $variable = '\" . mysql_real_escape_string(\$this->$variable, \$this->database->link) . \"'";
+            //$sRet .= ", $variable = '\" . mysqli_real_escape_string(\$this->$variable, \$this->database->link) . \"'";
             $sRet .= ", $variable = '\$this->$variable'";
         }
         $sRet .= ") WHERE $this->primarykey = \$mID;\";\n";

@@ -8,7 +8,7 @@ $oClass = new tableClass($_POST["classname"], $_POST["database"], $_POST["table"
 $strPath = realpath($oClass->createClass());
 echo "File saved as <strong>" . $strPath . "</strong>";
 
-/*
+
 if(isset($_GET["displayclass"]) && $_GET["displayclass"] > 0) {
     // Display the class, do not save.
     $oClass->createClass(TRUE, FALSE);
@@ -17,5 +17,7 @@ if(isset($_GET["displayclass"]) && $_GET["displayclass"] > 0) {
     $oClass->createClass();
     echo "Class created successfully.";
 }
-*/
-?>
+
+
+echo '<pre>';
+echo file_get_contents($strPath);
