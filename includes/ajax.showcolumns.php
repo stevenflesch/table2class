@@ -1,11 +1,11 @@
 <?php
 // Attempt to list databases with supplied credentials.
-$oLink = @mysql_connect($_POST["serveraddress"], $_POST["serverusername"], $_POST["serverpassword"]) or die("Error: Could not connect to server.");
-mysql_select_db($_POST["database"], $oLink);
-$oResult = mysql_query("SHOW COLUMNS FROM " . $_POST["table"] . ";");
+$oLink = @mysqli_connect($_POST["serveraddress"], $_POST["serverusername"], $_POST["serverpassword"]) or die("Error: Could not connect to server.");
+mysqli_select_db($oLink, $_POST["database"]);
+$oResult = mysqli_query($oLink, "SHOW COLUMNS FROM " . $_POST["table"] . ";");
 
 // Check for valid results
-if(mysql_affected_rows($oLink) == 0) {
+if(mysqli_affected_rows($oLink) == 0) {
     echo "Error: No columns returned from table \"" . $_POST["table"] . "\" in database \"" . $_POST["database"] . "\".";
     exit;
 }
@@ -14,7 +14,7 @@ if(mysql_affected_rows($oLink) == 0) {
 echo "<option value=\"\"></option>";
 
 // Ouput column names
-while($oRow = mysql_fetch_object($oResult)) {
+while($oRow = mysqli_fetch_object($oResult)) {
     // Attempt to detect primary key column.
     if($oRow->Key == "PRI") {
         // Primary key column.
